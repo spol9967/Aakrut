@@ -1,0 +1,29 @@
+{ 
+  "Branches": [
+    "Mechanical Engineering",
+    "Automobile",
+    "Biotechnology",  
+    "Chemical Engineering",  
+    "Civil Engineering",  
+    "Computer",  
+    "Electrical",  
+    "Electronics",
+    "Electronics and Tele",
+    "Information Technology",
+    "Instrumentation Engg",
+    "Mechatronics Engg",
+    "Printing & Packaging",
+    "Production Engg",
+    "Biomedical"
+  ],
+
+  "semester":[
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ]
+}
+

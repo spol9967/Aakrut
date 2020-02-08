@@ -1,0 +1,25 @@
+function load_data() {
+  $.getJSON('data/filter5.json', function (info) {
+    var listSemesterItems = '<option selected="selected" value="0">Select Semester</option>';
+
+    for (i = 0; i < info.semester.length; i++) {
+      listSemesterItems += "<option>" + info.semester[i] + "</option>";
+    }
+    $("#semester").html(listSemesterItems);
+
+  });
+
+}
+$(document).ready(function (){
+  $.getJSON('data/filter5.json', function (info) {
+    var listBranches = '<option selected="selected" value="0">Select Branches</option>';
+
+    for (i = 0; i < info.Branches.length; i++) {
+      listBranches += "<option>" + info.Branches[i] + "</option>";
+    }
+    $("#branches").html(listBranches);
+  });
+  $("#branches").change(function () {
+    load_data();
+  });
+});

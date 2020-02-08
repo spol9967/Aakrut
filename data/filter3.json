@@ -1,0 +1,125 @@
+[
+  {
+    "id":"1",
+    "name":"1",
+    "parent_id":"0"
+  },
+  {
+    "id":"2",
+    "name":"2",
+    "parent_id":"0"
+  },
+  {
+    "id":"3",
+    "name":"3",
+    "parent_id":"0"
+  },
+  {
+    "id":"4",
+    "name":"4",
+    "parent_id":"0"
+  },
+  {
+    "id":"5",
+    "name":"5",
+    "parent_id":"0"
+  },
+  {
+    "id":"6",
+    "name":"6",
+    "parent_id":"0"
+  },
+  {
+    "id":"7",
+    "name":"7",
+    "parent_id":"0"
+  },
+  {
+    "id":"8",
+    "name":"8",
+    "parent_id":"0"
+  },
+  {
+    "id":"9",
+    "name":[
+      ["Applied Mathematics I",
+       "Applied Physics I",
+       "Applied Chemistry I",
+       "Engineering Mechanics",
+       "Basic Electrical Engineering",
+       "Environmental studies"],
+    
+      ["Applied Mathematics II",
+       "Applied Physics II",
+       "Applied Chemistry II",
+       "Engineering Drawing",
+       "Structured Programming Approach",
+       "Communication Skills"],
+    
+      ["Applied mathematics",
+       "Thermodynamics",
+       "Strength of Materials",
+       "Production Process I* ",
+       "Material Technology",
+       "Computer aided machine drawing"],
+    
+      ["Applied Mathematics IV",
+       "Fluid Mechanics",
+       "Industrial Electronics",
+       "Production Process II",
+       "Kinematics of Machinery",
+       "Data Base and Information Retrieval"],
+    
+      ["Internal Combustion Engines",
+       "Heat Transfer",
+       "Dynamics of Machinery", 
+       "Mechanical Measurements and Control",       
+       "Press Tool Design", 
+       "Machining Sciences and Tool Design",
+       "Design of Jigs and Fixtures"],
+    
+      ["Machine Design I", 
+       "Finite Element analysis",       
+       "Metrology and Quality engineering", 
+       "Refrigeration and Air Conditioning", 
+       "Mechatronics",
+       "Robotics",
+       "Industrial Automation"],
+    
+      ["Machine Design II", 
+       "CAD/CAM/CAE", 
+       "Production Planning and Control", 
+       "Mechanical Vibrations",
+       "Automobile Engineering", 
+       "Pumps, Compressors and Fans", 
+       "Computational Fluid Dynamics",
+       "Product Lifecycle Management", 
+       "Reliability Engineering",
+       "Management Information System", 
+       "Design of Experiments",
+       "Operation Research", 
+       "Cyber Security and Laws", 
+       "Energy Audit and Management",
+       "Development Engineering", 
+       "Disaster Management and Mitigation Measures"],
+    
+      ["Design of Mechanical Systems",
+       "Industrial Engineering and Management",
+       "Power Engineering",
+       "Power Plant Engineering", 
+       "Rapid Prototyping", 
+       "Renewable Energy Systems", 
+       "Energy Management in Utility Systems", 
+       "Project Management", 
+       "Finance Management", 
+       "Entrepreneurship Development and Management", 
+       "Human Resource Management", 
+       "Professional Ethics and CSR",
+       "Research Methodology", 
+       "IPR and Patenting", 
+       "Digital Business Management", 
+       "Environmental Management"]],
+     "parent_id":"1"
+     }
+        
+  ]

@@ -1,0 +1,377 @@
+[
+    {
+     "id":"1",
+     "name":"Central",
+     "parent_id":"0"
+    }, 
+    {
+     "id":"2",
+     "name":"Harbour",
+     "parent_id":"0"
+    }, 
+    {
+     "id":"3",
+     "name":"Trans-Harbour",
+     "parent_id":"0"
+    }, 
+    {
+     "id":"4",
+     "name":"Western",
+     "parent_id":"0"
+    }, 
+    {
+     "id":"5",
+     "name":"INDIAN INSTITUTE OF TECHNOLOGY - [IIT], MUMBAI",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"6",
+     "name":"INSTITUTE OF CHEMICAL TECHNOLOGY - [ICT], MUMBAI",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"7",
+     "name":"VEERMATA JIJABAI TECHNOLOGICAL INSTITUTE - [VJTI], MUMBAI",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"8",
+     "name":"KJ SOMAIYA INSTITUTE OF ENGINEERING AND INFORMATION TECHNOLOGY - [KJSIEIT], MUMBAI",
+     "parent_id":"1"
+    },
+    {
+     "id":"9",
+     "name":"DON BOSCO INSTITUTE OF TECHNOLOGY - [DBIT], MUMBAI",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"10",
+     "name":"M H SABOO SIDDIK COLLEGE OF ENGINEERING - [MHSSCOE], MUMBAI",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"11",
+     "name":"SHIVAJIRAO S JONDHALE COLLEGE OF ENGINEERING - [SSJCE], THANE",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"12",
+     "name":"PADMABHUSHAN VASANTDADA PATIL PRATISHTHAN'S COLLEGE OF ENGINEERING - [PVPPCOE], MUMBAI",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"13",
+     "name":"ALAMURI RATNAMALA INSTITUTE OF ENGINEERING AND TECHNOLOGY - [ARMIET], THANE",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"14",
+     "name":"G.V. ACHARYA INSTITUTE OF ENGINEERING AND TECHNOLOGY - [GVAIET], MUMBAI",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"15",
+     "name":"LEELAVATI AWHAD INSTITUTE OF TECHNOLOGY AND MANAGEMENT STUDIES AND RESEARCH - [LAITM & R], THANE",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"16",
+     "name":"B. R. HARNE COLLEGE OF ENGINEERING AND TECHNOLOGY - [BRHCET], THANE",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"17",
+     "name":"VIVA INSTITUTE OF TECHNOLOGY - [VIOT], THANE",
+     "parent_id":"4"
+    }, 
+    {
+     "id":"18",
+     "name":"UNIVERSAL COLLEGE OF ENGINEERING, THANE",
+     "parent_id":"4"
+    }, 
+    {
+     "id":"19",
+     "name":"VISHWATMAK OM GURUDEV COLLEGE OF ENGINEERING - [VOGCE], THANE",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"20",
+     "name":"SHAILESH J. MEHTA SCHOOL OF MANAGEMENT, IIT BOMBAY - [SJMSOM], MUMBAI",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"21",
+     "name":"NATIONAL INSTITUTE OF INDUSTRIAL ENGINEERING - [NITIE], MUMBAI",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"22",
+     "name":"SHIVAJIRAO S. JONDHLE COLLEGE OF ENGINEERING AND TECHNOLOGY,ASANGAON",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"23",
+     "name":"YADAVRAO TASGAONKAR COLLEGE OF ENGINEERING & MANAGEMENT - [YTCEM], KARJAT",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"24",
+     "name":"NEW HORIZON INSTITUTE OF TECHNOLOGY AND MANAGEMENT, THANE",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"25",
+     "name":"A. P. SHAH INSTITUTE OF TECHNOLOGY - [APSIT], THANE",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"26",
+     "name":"K. C. COLLEGE OF ENGINEERING AND MANAGEMENT STUDIES AND RESEARCH, THANE",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"27",
+     "name":"DILKAP RESEARCH INSTITUTE OF ENGINEERING AND MANAGEMENT STUDIES - [DRIEMS], KARJAT",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"28",
+     "name":"BHARAT COLLEGE OF ENGINEERING, THANE",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"29",
+     "name":"KOKAN GYANPEETH COLLEGE OF ENGINEERING,KARJAT",
+     "parent_id":"1"
+    }, 
+    {
+      "id":"30",
+      "name":"FR. C. RODRIGUES INSTITUTE OF TECHNOLOGY - [FCRIT], NAVI MUMBAI",
+      "parent_id":"3"
+     }, 
+     {
+      "id":"31",
+      "name":"PILLAI COLLEGE OF ENGINEERING - [PCE], NAVI MUMBAI",
+      "parent_id":"2"
+     },   
+     {
+      "id":"32",
+      "name":"RAMRAO ADIK INSTITUTE OF TECHNOLOGY - [RAIT], NAVI MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"33",
+      "name":"SIES GRADUATE SCHOOL OF TECHNOLOGY - [SIES-GST], NAVI MUMBAI",
+      "parent_id":"2"
+     },   
+     {
+      "id":"34",
+      "name":"SARASWATI COLLEGE OF ENGINEERING - [SCOE], NAVI MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"35",
+      "name":"SHAH AND ANCHOR KUTCHHI ENGINEERING COLLEGE - [SAKEC], MUMBAI",
+      "parent_id":"2"
+     },   
+     {
+      "id":"36",
+      "name":"MAHATMA GANDHI MISSION'S COLLEGE OF ENGINEERING AND TECHNOLOGY - [MGMCET], NAVI MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"37",
+      "name":"SMT. INDIRA GANDHI COLLEGE OF ENGINEERING - [SIGCE], NAVI MUMBAI",
+      "parent_id":"3"
+     },     
+     {
+      "id":"38",
+      "name":"JAWAHAR EDUCATION SOCIETY’S A. C. PATIL COLLEGE OF ENGINEERING - [ACPCE], NAVI MUMBAI",
+      "parent_id":"2"
+     },   
+     {
+      "id":"39",
+      "name":"TPCT’S TERNA ENGINEERING COLLEGE - [TEC], NAVI MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"40",
+      "name":"ANJUMANIISLAM'S KALSEKAR TECHNICAL CAMPUS SCHOOL OF ENGINEERING AND TECHNOLOGY, NAVI MUMBAI",
+      "parent_id":"2"
+     },   
+     {
+      "id":"41",
+      "name":"DY PATIL UNIVERSITY, NAVI MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"42",
+      "name":"BHARATI VIDYAPEETH COLLEGE OF ENGINEERING - [BVCOE], NAVI MUMBAI",
+      "parent_id":"2"
+     },   
+     {
+      "id":"43",
+      "name":"DATTA MEGHE COLLEGE OF ENGINEERING AIROLI, NAVI MUMBAI",
+      "parent_id":"3"
+     }, 
+     {
+      "id":"44",
+      "name":"DR DY PATIL SCHOOL OF BIOTECHNOLOGY AND BIOINFORMATICS, NAVI MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"45",
+      "name":"INDIAN INSTITUTION OF INDUSTRIAL ENGINEERING, NAVI MUMBAI",
+      "parent_id":"2"
+     },   
+     {
+      "id":"46",
+      "name":"INSTITUTE OF MARINE ENGINEERS INDIA, NAVI MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"47",
+      "name":"AMITY UNIVERSITY, MUMBAI",
+      "parent_id":"2"
+     },   
+     {
+      "id":"48",
+      "name":"MARINE ENGINEERING AND RESEARCH INSTITUTE - [MERI], MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"49",
+      "name":"CHHATRAPATI SHIVAJI MAHARAJ INSTITUTE OF TECHNOLOGY - [CSMIT], PANVEL",
+      "parent_id":"2"
+     },   
+     {
+      "id":"50",
+      "name":"CHHATRAPATI SHIVAJI MAHARAJ UNIVERSITY - [CSMU], NAVI MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"51",
+      "name":"SCHOOL OF TECHNOLOGY, CHHATRAPATI SHIVAJI MAHARAJ UNIVERSITY - [CSMU], NAVI MUMBAI",
+      "parent_id":"2"
+     },  
+     {
+      "id":"52",
+      "name":"VIVEKANAND EDUCATION SOCIETY INSTITUTE OF TECHNOLOGY - [VESIT], MUMBAI",
+      "parent_id":"2"
+     },   
+     {
+      "id":"53",
+      "name":"SHAH AND ANCHOR KUTCHHI ENGINEERING COLLEGE - [SAKEC], MUMBAI",
+      "parent_id":"2"
+     }, 
+     {
+      "id":"54",
+      "name":"RAJIV GANDHI INSTITUTE OF TECHNOLOGY - [RGIT], MUMBAI",
+      "parent_id":"4"
+     },   
+     {
+      "id":"55",
+      "name":"FR. CONCEICAO RODRIGUES COLLEGE OF ENGINEERING - [CRCE], MUMBAI",
+      "parent_id":"4"
+     }, 
+     {
+      "id":"56",
+      "name":"SARDAR PATEL COLLEGE OF ENGINEERING - [SPCE], MUMBAI",
+      "parent_id":"4"
+     },   
+     {
+      "id":"57",
+      "name":"THAKUR COLLEGE OF ENGINEERING AND TECHNOLOGY - [TCET], MUMBAI",
+      "parent_id":"4"
+     }, 
+     {
+      "id":"58",
+      "name":"ATHARVA COLLEGE OF ENGINEERING, MUMBAI",
+      "parent_id":"4"
+     },   
+     {
+      "id":"59",
+      "name":"RIZVI COLLEGE OF ENGINEERING - [RCOE], MUMBAI",
+      "parent_id":"4"
+     },  
+     {
+      "id":"60",
+      "name":"SARDAR PATEL INSTITUTE OF TECHNOLOGY - [SPIT], MUMBAI",
+      "parent_id":"4"
+     },  
+     {
+      "id":"61",
+      "name":"ST. FRANCIS INSTITUTE OF TECHNOLOGY - [SFIT], MUMBAI",
+      "parent_id":"4"
+     },   
+     {
+      "id":"62",
+      "name":"ST. JOHN COLLEGE OF ENGINEERING AND MANAGEMENT - [SJCEM], PALGHAR",
+      "parent_id":"4"
+     },   
+     {
+      "id":"63",
+      "name":"THADOMAL SHAHANI ENGINEERING COLLEGE - [TSEC], MUMBAI",
+      "parent_id":"4"
+     }, 
+     {
+      "id":"64",
+      "name":"WATUMULL INSTITUTE OF ELECTRONIC ENGINEERING AND COMPUTER TECHNOLOGY - [WIEECT], MUMBAI",
+      "parent_id":"4"
+     },   
+     {
+      "id":"65",
+      "name":"XAVIER INSTITUTE OF ENGINEERING - [XIE], MUMBAI",
+      "parent_id":"4"
+     },  
+     {
+      "id":"66",
+      "name":"VIDYAVARDHINI'S COLLEGE OF ENGINEERING AND TECHNOLOGY - [VCET], PALGHAR",
+      "parent_id":"4"
+     },  
+     {
+      "id":"67",
+      "name":"THEEM COLLEGE OF ENGINEERING - [TCOE], PALGHAR",
+      "parent_id":"4"
+     },  
+     {
+      "id":"68",
+      "name":"DWARKADAS J SANGHVI COLLEGE OF ENGINEERING - [DJSCE], MUMBAI",
+      "parent_id":"4"
+     },   
+     {
+      "id":"69",
+      "name":"TATA INSTITUTE OF FUNDAMENTAL RESEARCH - [TIFR], MUMBAI",
+      "parent_id":"4"
+     }, 
+     {
+      "id":"70",
+      "name":"USHA MITTAL INSTITUTE OF TECHNOLOGY - [UMIT], MUMBAI",
+      "parent_id":"4"
+     },   
+     {
+      "id":"71",
+      "name":"MUKESH PATEL SCHOOL OF TECHNOLOGY MANAGEMENT AND ENGINEERING - [MPSTME], MUMBAI",
+      "parent_id":"4"
+     },  
+     {
+      "id":"72",
+      "name":"NATIONAL INSTITUTE OF MANAGEMENT - [NIM], MUMBAI",
+      "parent_id":"4"
+     },  
+     {
+      "id":"73",
+      "name":"GARWARE INSTITUTE OF CAREER EDUCATION AND DEVELOPMENT - [GICED], MUMBAI",
+      "parent_id":"4"
+     },  
+     {
+      "id":"73",
+      "name":"SHREEMATI NATHIBAI DAMODAR THACKERSEY WOMEN'S UNIVERSITY - [SNDT], MUMBAI",
+      "parent_id":"4"
+     },   
+     {
+      "id":"74",
+      "name":"SIR SITARAM AND LADY SHANTABAI PATKAR COLLEGE OF ARTS AND SCIENCE - [SSLSPCAS], MUMBAI",
+      "parent_id":"4"
+     } 
+  ]
