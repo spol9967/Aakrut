@@ -1,3 +1,11 @@
+<?php 
+
+//index.php
+
+include('php/database_connection.php');
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -44,23 +52,24 @@
           </select>
         </div>
 
+        <div class="form-group">
           <label for="text-capitalize">Services</label>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck1">
-            <label class="custom-control-label text-capitalize" for="customCheck1">Assingment Writing </label>
-          </div> 
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck2">
-            <label class="custom-control-label text-capitalize" for="customCheck2">Mini Project</label>
-          </div> 
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck3">
-            <label class="custom-control-label text-capitalize" for="customCheck3">Final Year Project</label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck4">
-            <label class="custom-control-label text-capitalize" for="customCheck4">Drawing</label>
-          </div>
+          <?php
+            $query = "SELECT DISTINCT(Service_Type) FROM services ORDER BY Service_Id DESC";
+            $statement = $connect->prepare($query);
+            $statement->execute();
+            $result = $statement->fetchAll();
+            foreach($result as $row)
+              {
+          ?>
+                <div class="checkbox">
+                   <label><input type="checkbox" class="selector Service_Type" value="<?php echo $row['Service_Type']; ?>"  > <?php echo $row['Service_Type']; ?></label>
+                </div>
+          <?php
+              }
+          ?>
+        </div>
+
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary my-4" data-toggle="modal" data-target="#exampleModalLong">
                     I am available for work
@@ -70,18 +79,11 @@
       <!-- /.col-lg-2 -->
       
       <div class="col-lg-10">
-        <div class="row my-3"> 
-          <div class="col-12">
-            <div class="form-group float-right ">
-              <select class="form-control mr-sm-2 rounded-0" id="sort">
-                <option class="text-capitalize" value="">Sort by: Recommended</option>
-                <option class="text-capitalize ">Price: high to low</option>
-                <option class="text-capitalize">Price: low to high</option>
-                <option class="text-capitalize">What's new</option>
-              </select>
-            </div>      
-          </div>
+
+        <div class="row border-top p-3">
+          <div class="row filter2_data"></div>
         </div>
+
 
       </div>
       <!-- /.col-lg-10 -->
@@ -134,14 +136,22 @@
                 </div>
 
                 <div class="form-group row">
-                  <label for="edu" class="col-sm-4">Service</label>
+                  <label for="service" class="col-sm-4">Service</label>
                   <div class="col">
-                    <select class="form-control col-sm-11" id="User_Service">
+                    <select class="form-control col-sm-11" id="Service_Type">
                       <option>Assingment Writing</option>
                       <option>Mini Project</option>
                       <option>Final Year Project</option>
                       <option>Drawing</option>
                     </select>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="description" class="col-sm-4">Description</label>
+                  <div class="col">
+                    <textarea class="form-control col-sm-11" required rows="3" name="Description" id="Description" aria-describedby="DescriptionHelp" placeholder="Enter Description"></textarea>
+                    <small id="namecheck"></small>
                   </div>
                 </div>
 
@@ -163,7 +173,7 @@
                 </div>
    
 
-                <input class="btn btn-primary" type="submit" name="submits" id="submits" value="Submit">
+                <input class="btn btn-primary" type="submit" name="submit" id="submit" value="Submit">
 
                 <!-- <input type="button" name="submit" id="submit" class="btn btn-info" value="Submit" />   -->
               </form> 
@@ -180,6 +190,7 @@
       </div>
     </div>
   <!-- /.Modal -->
+  <script src="js/detail.js"></script>
 
   <?php include 'php/footer.php';?>
   <?php include 'php/flinks.php';?>

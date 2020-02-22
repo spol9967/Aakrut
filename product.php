@@ -3,7 +3,7 @@
 //index.php
 
 include('php/database_connection.php');
-include('php/fetch_data.php');
+// include('php/fetch_data.php');
 
 //for total count data
 $countSql = "SELECT COUNT(Product_Id) FROM products";  
@@ -42,6 +42,15 @@ $total_pages = ceil($total_records / $limit);
  
         <h5 class="text-capitalize my-3">Filters</h5>
  
+
+        <div class="form-group">  
+          <label for="Price">Price</label>
+          <input type="hidden" id="hidden_minimum_price" value="0" />
+          <input type="hidden" id="hidden_maximum_price" value="65000" />
+          <p id="price_show">10 - 65000</p>
+          <div id="price_range"></div>
+        </div>    
+
         <div class="form-group">  
           <label for="route">Route</label>
           <select class="form-control" id="Route">
@@ -107,13 +116,12 @@ $total_pages = ceil($total_records / $limit);
         <div class="row my-3">
           <div class="col-12">
 
-
-          <form action="" name="price" method="GET()" >
-            <select name="price" id="price" onchange="submit()">
-              <option value="lowToHigh">Low to High</option>
-              <option value="highToLow">High to Low</option>
-            </select>
-          </form>
+            <form action="" name="price" method="GET()" >
+              <select name="price" id="price" onchange="submit()">
+                <option value="lowToHigh">Low to High</option>
+                <option value="highToLow">High to Low</option>
+              </select>
+            </form>
             <div class="form-group float-right ">
               <select class="form-control mr-sm-2 rounded-0" id="sortby" name="sortby">
                 <option class="text-capitalize" value="">Sort by: Recommended</option>
@@ -121,7 +129,8 @@ $total_pages = ceil($total_records / $limit);
                 <option class="text-capitalize">Price: low to high</option>
                 <option class="text-capitalize">What's new</option>
               </select>
-            </div>      
+            </div>     
+
           </div>
         </div>
 
@@ -224,7 +233,7 @@ $total_pages = ceil($total_records / $limit);
                   </table>
                 </div>
 
-                <input class="btn btn-primary" type="submit" name="submit" id="submit" value="Submit">
+                <input class="btn btn-primary" type="submit" name="submits" id="submits" value="Submit">
 
                 <!-- <input type="button" name="submit" id="submit" class="btn btn-info" value="Submit" />   -->
               </form> 

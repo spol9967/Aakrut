@@ -9,7 +9,6 @@ $(document).ready(function(){
                data:$('#serviceDetails').serialize(),  
                success:function(data)  
                {  
-                //   $('#productDetails')[0].reset(); 
 
                }  
           });  

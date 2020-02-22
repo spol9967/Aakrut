@@ -2,8 +2,10 @@
     <script src="js/filter2.js"></script>
     <script src="js/filter3.js"></script>
     <script src="js/filter4.js"></script>
+    <script src="js/filter5.js"></script>
     <script src="js/products_modal.js"></script>
     <script src="js/services_modal.js"></script>
+    <script src="js/detail.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->

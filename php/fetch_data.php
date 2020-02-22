@@ -7,9 +7,13 @@ include('database_connection.php');
 
 if(isset($_POST["action"]))
 {
- $query = "
-  SELECT * FROM products WHERE Is_Sell = '0'
- ";
+  $query = "SELECT * FROM products WHERE Is_Sell = '0'";
+ if(isset($_POST["minimum_price"], $_POST["maximum_price"]) && !empty($_POST["minimum_price"]) && !empty($_POST["maximum_price"]))
+ {
+  $query .= "
+   AND Price BETWEEN '".$_POST["minimum_price"]."' AND '".$_POST["maximum_price"]."'
+  ";
+ } 
 
  if(isset($_POST["type"]))
  {
@@ -67,7 +71,7 @@ if(isset($_POST["$price"]))
         <img src="'. $row['Product_Img'] .'" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">'. $row['Product_Name'] .'</h5>
-          <p class="card-text">'. $row['Region'] .'</p>
+          <p class="card-text">Price: '. $row['Price'] .'</p>
           <p class="card-text">College Name: '. $row['College_Name'] .'</p>
           <p class="card-text">Brach: '. $row['Branch'] .'</p>
           <p class="card-text">Semester: '. $row['Semester'] .'</p>
