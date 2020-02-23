@@ -104,7 +104,7 @@ $total_pages = ceil($total_records / $limit);
         </div>
       
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary text-capitalize mb-4" data-toggle="modal" data-target=".bd-example-modal-xl">
+        <button type="button" class="btn btn-primary text-capitalize mb-4" data-toggle="modal" data-target=".start-modal-xl">
           Sell your product
         </button>
 
@@ -146,7 +146,7 @@ $total_pages = ceil($total_records / $limit);
 
             <?php if(!empty($total_pages)):for($i=1; $i<=$total_pages; $i++):  
             if($i == 1):?>
-              <li class="page-item disabled">
+              <li class="page-item disabled " id="1">
                 <a class="page-link" href="php/response.php?page=1" tabindex="-1" aria-disabled="true">First</a>
               </li>
               <li class="page-item active" id="<?php echo $i;?>"><a href='php/response.php?page=<?php echo $i;?>' class="page-link" href="#"><?php echo $i;?></a></li>
@@ -155,8 +155,8 @@ $total_pages = ceil($total_records / $limit);
             <li id="<?php echo $i;?>" class="page-item"><a href='php/response.php?page=<?php echo $i;?>' class="page-link" href="#"><?php echo $i;?></a></li>
             <?php endif;?> 
 		        <?php endfor;endif;?> 
-            <li class="page-item">
-              <a class="page-link" href="php/pagination.php?page=1">Next</a>
+            <li class="page-item" id="<?php echo $total_pages;?>">
+              <a class="page-link" href="php/pagination.php?page=<?php echo $total_pages;?>">Last</a>
             </li>
           </ul>
         </nav>
@@ -194,21 +194,7 @@ $total_pages = ceil($total_records / $limit);
                   </div>
                 </div>
 
-                <div class="form-group row">
-                  <label for="name" class="col-sm-1">Name:</label>
-                  <div class="col">
-                    <input type="text" class="form-control col-sm-4" required name="User_Name" id="User_Name" aria-describedby="User_NameHelp" placeholder="Enter Name">
-                    <small id="namecheck"></small>
-                  </div>
-                </div>
-
-                <div class="form-group row">
-                  <label for="edu" class="col-sm-1">Mobile:</label>
-                  <div class="col">
-                    <input type="number" class="form-control col-sm-4" required name="User_Mobile" id="User_Mobile" aria-describedby="User_MobileHelp" placeholder="Enter mobile number">
-                    <small id="educheck"></small>
-                  </div>
-                </div>
+                <input class="btn btn-primary" type="submit" name="submits" id="submits" value="Submit">
 
                 <div class="table-responsive">
                   <span id="error"></span>
@@ -233,9 +219,7 @@ $total_pages = ceil($total_records / $limit);
                   </table>
                 </div>
 
-                <input class="btn btn-primary" type="submit" name="submits" id="submits" value="Submit">
-
-                <!-- <input type="button" name="submit" id="submit" class="btn btn-info" value="Submit" />   -->
+                
               </form> 
 
             </div>
@@ -249,15 +233,147 @@ $total_pages = ceil($total_records / $limit);
         </div>
       </div>
     </div>
+
+
+    <div class="modal fade signup-modal-xl" tabindex="-1" role="dialog" data-backdrop="static"  aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <h5 class="modal-title text-capitalize" id="exampleModalScrollableTitle">Sign up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="box border p-3">
+
+              <form name="productDetails" id="productDetails" autocomplete="on">
+
+                <div class="form-group row">
+                  <label for="email" class="col-sm-1">Email Id:</label>
+                  <div class="col">
+                    <input type="email" class="form-control col-sm-4" required name="Email_Id" id="Email_Id" aria-describedby="Email_IdHelp" placeholder="Enter Email Id" autofocus>
+                    <small id="itemcheck"></small>
+                  </div>
+                </div>
+                
+                <div class="form-group row">
+                  <label for="name" class="col-sm-1">Name:</label>
+                  <div class="col">
+                    <input type="text" class="form-control col-sm-4" required name="User_Name" id="User_Name" aria-describedby="User_NameHelp" placeholder="Enter Name">
+                    <small id="namecheck"></small>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="edu" class="col-sm-1">Mobile:</label>
+                  <div class="col">
+                    <input type="number" class="form-control col-sm-4" required name="User_Mobile" id="User_Mobile" aria-describedby="User_MobileHelp" placeholder="Enter mobile number">
+                    <small id="educheck"></small>
+                  </div>
+                </div>
+
+                <button type="button" class="btn btn-primary text-capitalize mb-4" data-toggle="modal" data-target=".otp-modal-xl" data-dismiss="modal">
+              Submit
+              </button>
+                
+              </form> 
+
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade otp-modal-xl" tabindex="-1" role="dialog" data-backdrop="static"  aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <h5 class="modal-title text-capitalize" id="exampleModalScrollableTitle">Verify your Email ID</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="box border p-3">
+
+              <form name="productDetails" id="productDetails" autocomplete="on">
+              <p>Enter OTP send to your Email ID</p>
+                <div class="form-group row">
+                  <label for="email" class="col-sm-1">OTP:</label>
+                  <div class="col">
+                    <input class="form-control col-sm-4" required name="otp" id="otp"  placeholder="Enter OTP" autofocus>
+                    <small id="itemcheck"></small>
+                  </div>
+                </div>
+
+                <input class="btn btn-primary" type="submit" name="submits" id="submits" value="Verify">
+              </form> 
+
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade start-modal-xl" tabindex="-1" role="dialog" data-backdrop="static"  aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <h5 class="modal-title text-capitalize" id="exampleModalScrollableTitle">Sell your product</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="box border p-3">
+
+              <p>Are you a new user?</p>
+              <p>Please signup for proceed further</p>
+              <button type="button" class="btn btn-primary text-capitalize mb-4" data-toggle="modal" data-target=".signup-modal-xl" data-dismiss="modal">
+              Sign Up
+              </button>
+              <p>Already register?</p>
+              <button type="button" class="btn btn-primary text-capitalize mb-4" data-toggle="modal" data-target=".bd-example-modal-xl" data-dismiss="modal">
+              Sell product
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
   <!-- /.Modal -->
 
   <?php include 'php/footer.php';?>
   <?php include 'php/flinks.php';?>
 
   <script type="text/javascript">
-$(document).ready(function(){
-	jQuery("#target-content").load("php/response.php?page=1");
-})
+// $(document).ready(function(){
+// 	jQuery("#target-content").load("php/response.php?page=1");
+// })
 
 jQuery("#pagination li").on('click',function(e){
  e.preventDefault();
@@ -265,6 +381,7 @@ jQuery("#pagination li").on('click',function(e){
  jQuery("#pagination li").removeClass('active');
  jQuery(this).addClass('active');
         var pageNum = this.id;
+        console.log(pageNum);
         jQuery(".filter_data").load("php/response.php?page=" + pageNum);
 });
 
