@@ -189,12 +189,12 @@ $total_pages = ceil($total_records / $limit);
                 <div class="form-group row">
                   <label for="email" class="col-sm-1">Email Id:</label>
                   <div class="col">
-                    <input type="email" class="form-control col-sm-4" required name="Email_Id" id="Email_Id" aria-describedby="Email_IdHelp" placeholder="Enter Email Id" autofocus>
+                    <input type="email" class="form-control col-sm-4" required name="Email_Id" id="Email_Id_add" aria-describedby="Email_IdHelp" placeholder="Enter Email Id" autofocus>
                     <small id="itemcheck"></small>
                   </div>
                 </div>
 
-                <input class="btn btn-primary" type="submit" name="submits" id="submits" value="Submit">
+                <input class="btn btn-primary mb-4" type="submit" name="submit_sell" id="submit_sell" value="Submit">
 
                 <div class="table-responsive">
                   <span id="error"></span>
@@ -212,7 +212,7 @@ $total_pages = ceil($total_records / $limit);
                         <th scope="col">Price</th>
                         <th scope="col">Categories</th>
                         <th scope="col">Description</th>
-                        <th><button type="button" name="add" class="btn btn-success btn-sm add"><i class="fas fa-plus"></i></button></th>
+                        <th><button type="button" name="add" class="btn btn-success btn-sm add" id="add_btn"><i class="fas fa-plus"></i></button></th>
                       </tr>
                     </thead>
                     <tbody></tbody>
@@ -227,7 +227,7 @@ $total_pages = ceil($total_records / $limit);
 
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary" id="save_changes">Save changes</button>
           </div>
 
         </div>
@@ -249,7 +249,7 @@ $total_pages = ceil($total_records / $limit);
           <div class="modal-body">
             <div class="box border p-3">
 
-              <form name="productDetails" id="productDetails" autocomplete="on">
+              <form id="signupform"  method="post" autocomplete="on">
 
                 <div class="form-group row">
                   <label for="email" class="col-sm-1">Email Id:</label>
@@ -274,10 +274,9 @@ $total_pages = ceil($total_records / $limit);
                     <small id="educheck"></small>
                   </div>
                 </div>
-
-                <button type="button" class="btn btn-primary text-capitalize mb-4" data-toggle="modal" data-target=".otp-modal-xl" data-dismiss="modal">
-              Submit
-              </button>
+                <input class="btn btn-primary text-capitalize mb-4" type="submit" name="signup" id="signup"  value="Submit">
+                <input class="btn btn-primary text-capitalize mb-4" type="submit" name="next" id="signupNext"  data-toggle="modal" data-target=".otp-modal-xl" data-dismiss="modal" value="Next">
+              
                 
               </form> 
 
@@ -306,17 +305,24 @@ $total_pages = ceil($total_records / $limit);
           <div class="modal-body">
             <div class="box border p-3">
 
-              <form name="productDetails" id="productDetails" autocomplete="on">
+              <form name="otpCheck" id="otpCheck" autocomplete="on">
+                <div class="alert alert-danger" id="otp_err">
+                 OTP does not match.
+                </div>
+                <div class="alert alert-success" id="otp_succ">
+                <strong>Success!</strong> OTP match successfully.
+                </div>
               <p>Enter OTP send to your Email ID</p>
                 <div class="form-group row">
                   <label for="email" class="col-sm-1">OTP:</label>
                   <div class="col">
-                    <input class="form-control col-sm-4" required name="otp" id="otp"  placeholder="Enter OTP" autofocus>
+                    <input class="form-control col-sm-4" required name="otp" id="otpinput"  placeholder="Enter OTP" autofocus>
                     <small id="itemcheck"></small>
                   </div>
                 </div>
 
-                <input class="btn btn-primary" type="submit" name="submits" id="submits" value="Verify">
+                <input class="btn btn-primary" type="submit" name="otpVerify" id="otpVerify" value="Verify">
+                <input class="btn btn-primary" type="submit" name="otpNext" id="otpNext" data-toggle="modal" data-target=".bd-example-modal-xl" data-dismiss="modal" value="Next">
               </form> 
 
             </div>
@@ -391,6 +397,8 @@ jQuery("#pagination li").on('click',function(e){
         });
     })
 </script>
+<script src="js/signup.js"></script>
+<script src="js/sell_product.js"></script>
  </body>
 </html>
 
