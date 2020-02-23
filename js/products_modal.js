@@ -3,11 +3,10 @@ $(document).ready(function(){
     var quantity=0;
      $(document).on('click','.add', function(){
        count++;
-       var quantity =parseInt($('#quantity').val());
-       $('#quantity').val(quantity + 1);
+       quantity++;
        var html = '';
        html += '<tr>';
-       html += '<th scope="row"><input type="text" id="quantity" name="quantity" readonly class="form-control form-control-sm input-number" value="1" min="1" max="100"></th>'
+       html += '<th scope="row"><input type="text" name="quantity" readonly class="form-control form-control-sm input-number quantity" value="1"></th>';
        html += '<td><input type="text" name="Product_Name[]" required class="form-control form-control-sm Product_Name"></td>';
       //  html += '<td><input type="file" name="Product_Img[]" required class="form-control-file Product_Img"></td>';
        html += '<td><input type="text" name="Region[]" required class="form-control form-control-sm Region"></td>';
@@ -20,14 +19,19 @@ $(document).ready(function(){
        html += '<td><input type="text" name="Description[]" required class="form-control form-control-sm Description"></td>';
        html += '<td><button type="button" name="remove" class="btn btn-danger btn-sm remove"><i class="fas fa-minus"></i></button></td>';
        $('tbody').append(html);
+       $('.quantity')[quantity-1].value = quantity;
      });
 
      $(document).on('click', '.remove', function(){
-        $(this).closest('tr').remove();
-        var quantity =parseInt($('#quantity').val());
+       $(this).closest('tr').remove();
+       var tempquantity = quantity-1;
+       while(tempquantity!=0){
+         $('.quantity')[tempquantity-1].value = tempquantity;
+         tempquantity--;
+        }
 
         if(quantity>0){
-          $('#quantity').val(quantity - 1)   
+          quantity--;  
         }
       });
 
