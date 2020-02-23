@@ -35,7 +35,13 @@ else{
     if($rowcount > 0){
         echo 1;
     }else{
-        sendMail();
+        $query = "SELECT * FROM `user_info` WHERE 1";
+        $result = $connect->query($query);
+        $rowcount= $result->rowCount();
+        $rowcount++;
+        $query = "INSERT INTO `user_info` (User_Id,User_Name,Email_Id, Mobile_No) VALUES ('".$rowcount."','".$UserName."','".$EmailId."','". $UserMobile."')";
+        $connect->query($query);
+        sendMail($EmailId,$UserName);
     }
     
     
@@ -44,7 +50,7 @@ else{
 
 
 
-  function sendMail(){
+  function sendMail($EmailId,$UserName){
         //OTP genration
         // Function to generate OTP 
         function generateNumericOTP($n) { 
@@ -77,25 +83,25 @@ else{
             // }
 
             //Server settings
-            // $mail->isSMTP();                                      
-            // $mail->SMTPAuth   = true;                         
-            // $mail->SMTPSecure = 'ssl';  
-            // $mail->Host       = 'smtp.gmail.com';              
-            // $mail->Port       = 465;
-            // $mail->isHTML(true);
-            // $mail->Username   = 'teamtech.init@gmail.com';
-            // $mail->Password   = 'Te@m_w1N';               
+            $mail->isSMTP();                                      
+            $mail->SMTPAuth   = true;                         
+            $mail->SMTPSecure = 'ssl';  
+            $mail->Host       = 'smtp.gmail.com';              
+            $mail->Port       = 465;
+            $mail->isHTML(true);
+            $mail->Username   = 'teamtech.init@gmail.com';
+            $mail->Password   = 'Te@m_w1N';               
 
-            // //Recipients
-            // $mail->setFrom('teamtech.init@gmail.com', 'Mailer');
-            // $mail->addAddress($EmailId, $UserName);     
+            //Recipients
+            $mail->setFrom('teamtech.init@gmail.com', 'Mailer');
+            $mail->addAddress($EmailId, $UserName);     
 
-            // // Content
-            // $mail->Subject = 'Email verification';
-            // $mail->Body    = 'This mail is genrated for email verification<br> Please enter following OTP for verification<br> <b>'.$otp.'<b>';
+            // Content
+            $mail->Subject = 'Email verification';
+            $mail->Body    = 'This mail is genrated for email verification<br> Please enter following OTP for verification<br> <b>'.$otp.'<b>';
 
-            // $mail->send();
-            // $output = $otp;
+            $mail->send();
+            $output = $otp;
             $output = $otp;
             echo $output;
         } catch (Exception $e) {
