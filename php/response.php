@@ -28,7 +28,7 @@ if($result > 0)
   $output .= '
    <div class="col-lg-3 col-md-4 mb-4">
      <div class="card h-100 shadow">
-       <img src="'. $row['Product_Img'] .'" class="card-img-top" alt="...">
+       <img src="./images/product/'. $row['Product_Img'] .'" class="card-img-top" alt="...">
        <div class="card-body">
          <h5 class="card-title">'. $row['Product_Name'] .'</h5>
          <p class="card-text">'. $row['Region'] .'</p>
