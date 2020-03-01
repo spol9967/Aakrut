@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 29, 2020 at 01:24 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Generation Time: Feb 22, 2020 at 08:33 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -31,7 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `products` (
   `Product_Id` int(20) NOT NULL,
   `Product_Name` varchar(100) NOT NULL,
-  `Product_Img` varchar(200) NOT NULL,
+  `Product_Img` longblob NOT NULL,
   `Region` varchar(100) NOT NULL,
   `College_Name` varchar(200) NOT NULL,
   `Branch` varchar(50) NOT NULL,
@@ -49,18 +49,18 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`Product_Id`, `Product_Name`, `Product_Img`, `Region`, `College_Name`, `Branch`, `Semester`, `Subject`, `Price`, `Type`, `Description`, `Date_Added`, `Is_Sell`) VALUES
-(1, 'Techmax Information Technology', 'prod_001.jpg', 'Central', 'KJ Somaiya', 'Information Technology', 3, 'Fundamental Computing', 500, 'Reference Books', 'abcdefghijklmna', '2020-01-29 05:41:22', 0),
-(2, 'RRB Mechanical Engineering', 'prod_002.jpg', 'Harbour', 'Viva', 'Mechanical', 6, 'Discrete Mathematics', 11350, 'Reference Books', 'abcjfdfhdsjfdnf', '2020-01-29 05:41:22', 0),
-(3, 'Painting and Drawing Tools Set', 'prod_003.jpg', 'Central', 'Kelkar', 'Automobile', 1, 'Auto Cad', 1000, 'Stationary', 'abcdfklehfoibg', '2020-01-29 05:41:22', 0),
-(4, 'Flow error and Congestion Control', 'prod_004.jpg', 'Western', 'Rizvi', 'Computer Science', 3, 'Python 3', 210, 'Study Material', 'qwerejfdkml;dmgl;f', '2020-01-29 05:41:22', 0),
-(5, 'Data Structure', 'prod_005.jpg', 'Western', 'Thakur', 'Information Technology', 4, 'Data Structure', 896, 'Reference Books', 'abjksdfsdkflsdkjfhsfdlksfldmvldnvkjdsbgfdkjdbgfjsgdkjgkfdjgkjgiuweyrterhjgfdg', '2020-01-29 08:47:41', 0),
-(6, 'Strength of Materials', 'prod_006.jpg', 'Harbour', 'Pillai', 'Mechanical ', 8, 'Strength of Materials', 9450, 'Reference Books', 'klafdjdfdsmfd', '2020-01-29 08:47:41', 0),
-(7, 'Material Technology', 'prod_007.jpg', 'Trans-Harbour', 'Rodrigues', 'Mechanical ', 7, 'Material Technology', 320, 'Reference Books', 'abcdefghijklmipaftyvwxya', '2020-01-29 08:47:41', 0),
-(8, 'Computational Fluid Dynamics', 'prod_008.jpg', 'Central', 'Vishwamatak', 'Automobile ', 5, 'Computational Fluid Dynamics', 740, 'Reference Books', 'abjkxhfuhflds', '2020-01-29 08:47:42', 0),
-(13, 'Stapler', 'prod_013.jpg', 'Western', 'Atharva', 'Electrical', 1, 'Electrical vehical  Technology', 850, 'Stationary', 'aklkflkdnf', '2020-01-29 08:53:00', 0),
-(14, 'Eraser\'s', 'prod_014.jpg', 'Harbour', 'Amity', 'Electronics and Tele', 2, 'Electromagnetic Engineering', 230, 'Stationary', 'sdf;lsdflds;,;/', '2020-01-29 08:53:00', 0),
-(15, 'Highlighter', 'prod_015.jpg', 'Trans-Harbour', 'Datta', 'Instrumentation Engg', 7, 'Analytical Instrumentation', 400, 'Stationary', 'fgfgdf', '2020-01-29 08:53:00', 0),
-(16, 'Paper Clip', 'prod_016.jpg', 'Central', 'Bharat', 'Electrical', 5, 'Microwave Engineering', 650, 'Stationary', 'gfhgfhgf', '2020-01-29 08:53:00', 0);
+(1, 'Techmax Information Technology', '', 'Central', 'KJ Somaiya', 'Information Technology', 3, 'Fundamental Computing', 500, 'Reference Books', 'abcdefghijklmna', '2020-01-29 05:41:22', 0),
+(2, 'RRB Mechanical Engineering', '', 'Harbour', 'Viva', 'Mechanical', 6, 'Discrete Mathematics', 11350, 'Reference Books', 'abcjfdfhdsjfdnf', '2020-01-29 05:41:22', 0),
+(3, 'Painting and Drawing Tools Set', '', 'Central', 'Kelkar', 'Automobile', 1, 'Auto Cad', 1000, 'Stationary', 'abcdfklehfoibg', '2020-01-29 05:41:22', 0),
+(4, 'Flow error and Congestion Control', '', 'Western', 'Rizvi', 'Computer Science', 3, 'Python 3', 210, 'Study Material', 'qwerejfdkml;dmgl;f', '2020-01-29 05:41:22', 0),
+(5, 'Data Structure', '', 'Western', 'Thakur', 'Information Technology', 4, 'Data Structure', 896, 'Reference Books', 'abjksdfsdkflsdkjfhsfdlksfldmvldnvkjdsbgfdkjdbgfjsgdkjgkfdjgkjgiuweyrterhjgfdg', '2020-01-29 08:47:41', 0),
+(6, 'Strength of Materials', '', 'Harbour', 'Pillai', 'Mechanical ', 8, 'Strength of Materials', 9450, 'Reference Books', 'klafdjdfdsmfd', '2020-01-29 08:47:41', 0),
+(7, 'Material Technology', '', 'Trans-Harbour', 'Rodrigues', 'Mechanical ', 7, 'Material Technology', 320, 'Reference Books', 'abcdefghijklmipaftyvwxya', '2020-01-29 08:47:41', 0),
+(8, 'Computational Fluid Dynamics', '', 'Central', 'Vishwamatak', 'Automobile ', 5, 'Computational Fluid Dynamics', 740, 'Reference Books', 'abjkxhfuhflds', '2020-01-29 08:47:42', 0),
+(13, 'Stapler', '', 'Western', 'Atharva', 'Electrical', 1, 'Electrical vehical  Technology', 850, 'Stationary', 'aklkflkdnf', '2020-01-29 08:53:00', 0),
+(14, 'Eraser\'s', '', 'Harbour', 'Amity', 'Electronics and Tele', 2, 'Electromagnetic Engineering', 230, 'Stationary', 'sdf;lsdflds;,;/', '2020-01-29 08:53:00', 0),
+(15, 'Highlighter', '', 'Trans-Harbour', 'Datta', 'Instrumentation Engg', 7, 'Analytical Instrumentation', 400, 'Stationary', 'fgfgdf', '2020-01-29 08:53:00', 0),
+(16, 'Paper Clip', '', 'Central', 'Bharat', 'Electrical', 5, 'Microwave Engineering', 650, 'Stationary', 'gfhgfhgf', '2020-01-29 08:53:00', 0);
 
 -- --------------------------------------------------------
 
@@ -110,9 +110,7 @@ CREATE TABLE `user_info` (
 
 INSERT INTO `user_info` (`User_Id`, `User_Name`, `Email_Id`, `Mobile_No`, `Verified`, `Date_Time`) VALUES
 (1, 'Shreya', 'shreya@gmail.com', 5655221, 0, '2020-02-09 09:23:51'),
-(2, 'Aryan', 'aryan@gmail.com', 85412, 0, '2020-02-09 09:23:51'),
-(3, 'Shubham', 'spol421@gmail.com', 2147483647, 0, '2020-02-23 20:11:06'),
-(4, 'ihjbihgbuiy', 'spol4212@gmail.com', 865764654, 0, '2020-02-26 16:25:21');
+(2, 'Aryan', 'aryan@gmail.com', 85412, 0, '2020-02-09 09:23:51');
 
 -- --------------------------------------------------------
 
@@ -183,7 +181,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `User_Id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `User_Id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
